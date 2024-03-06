@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 
 import { useState } from "react";
 
-import { brainwave } from "../assets";
+import { brainwave, mindblast } from "../assets";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HambugerMenu } from "./design/Header";
@@ -43,12 +43,14 @@ const Header = () => {
       }`}
     >
       <div className="flex justify-between items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4 py-2">
-        <a href="#hero" className="block w-[12rem] xl:mr-8">
+        <a
+          href="#hero"
+          className="block w-[12rem] xl:mr-8 h-10"
+        >
           <img
-            src={brainwave}
+            src={mindblast}
             alt="brainwave"
-            width={190}
-            height={40}
+            className="object-cover h-10 w-full"
           />
         </a>
         <nav
@@ -73,7 +75,7 @@ const Header = () => {
                     location.hash === item.url
                       ? "z-2 lg:text-n-1"
                       : "text-n-1/50"
-                  } leading-5 lg:hover:text-n-1 xl:px-12`}
+                  } leading-5  xl:px-12`}
                   key={item.id}
                   href={item.url}
                 >
