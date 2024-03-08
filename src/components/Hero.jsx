@@ -12,11 +12,10 @@ const Hero = () => {
       customPaddings
       id={"hero"}
     >
-      <div className="container relative">
+      <div className="container relative mb-20">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
-          <h1 className="h1 mb-6">
-            Explore the Possibilities of AI Chatting with
-            Minblast
+          <h1 className="h1 mb-8">
+            Explore the Possibilities of AI Chatting with{" "}
             <span className="inline-block relative">
               Mindblast{" "}
               <img
@@ -47,12 +46,12 @@ const Hero = () => {
                   alt="hero"
                   width={1024}
                   height={490}
-                  className="w-full overflow-hidden -translate-y-[22rem]"
+                  className="w-full overflow-hidden sm:-translate-y-[5rem] md:-translate-y-[7rem]  lg:-translate-y-[22rem]"
                 />
               </div>
             </div>
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[113%]">
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[50%] md:w-[138%] lg:-top-[113%]">
             <img
               src={heroBackground}
               alt="hero background"
