@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "./Section";
-import { curve, robot } from "../assets";
+import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="h1 mb-6">
             Explore the Possibilities of AI Chatting with
-            MinblastCurve
+            Minblast
             <span className="inline-block relative">
               Mindblast{" "}
               <img
@@ -45,11 +45,21 @@ const Hero = () => {
                 <img
                   src={robot}
                   alt="hero"
-                  width={1440}
-                  height={1800}
+                  width={1024}
+                  height={490}
+                  className="w-full overflow-hidden -translate-y-[22rem]"
                 />
               </div>
             </div>
+          </div>
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[113%]">
+            <img
+              src={heroBackground}
+              alt="hero background"
+              width={1440}
+              height={1800}
+              className="w-full"
+            />
           </div>
         </div>
       </div>
