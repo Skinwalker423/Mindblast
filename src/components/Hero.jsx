@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import Section from "./Section";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
+import {
+  BackgroundCircles,
+  BottomLine,
+  Gradient,
+} from "./design/Hero";
+import { ScrollParallax } from "react-just-parallax";
+import { heroIcons } from "../constants";
 
 const Hero = () => {
+  const parallaxRef = useRef(null);
   return (
     <Section
       className={"pt-32 sm:pt-[12rem] -mt-[5.25rem]"}
@@ -12,7 +20,10 @@ const Hero = () => {
       customPaddings
       id={"hero"}
     >
-      <div className="container relative mb-20">
+      <div
+        className="container relative mb-20"
+        ref={parallaxRef}
+      >
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="h1 mb-8">
             Explore the Possibilities of AI Chatting with{" "}
@@ -48,6 +59,22 @@ const Hero = () => {
                   height={490}
                   className="w-full overflow-hidden sm:-translate-y-[5rem] md:-translate-y-[7rem]  lg:-translate-y-[22rem]"
                 />
+                <ScrollParallax isAbsolutelyPositioned>
+                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                    {heroIcons.map((icon, index) => {
+                      return (
+                        <li key={index} className="p-5">
+                          <img
+                            src={icon}
+                            alt={`hero-icon-{index}`}
+                            width={24}
+                            height={25}
+                          />
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollParallax>
               </div>
             </div>
           </div>
@@ -60,6 +87,7 @@ const Hero = () => {
               className="w-full"
             />
           </div>
+          <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
       </div>
     </Section>
