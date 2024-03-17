@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
             <Gradient />
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[50%] md:w-[138%] lg:-top-[113%]">
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[50%] md:w-[138%] lg:-top-[108%]">
             <img
               src={heroBackground}
               alt="hero background"
