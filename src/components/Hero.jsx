@@ -84,7 +84,10 @@ const Hero = () => {
                   </ul>
                 </ScrollParallax>
                 <ScrollParallax isAbsolutelyPositioned>
-                  <Notification className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex" />
+                  <Notification
+                    title={"Code Generation"}
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                  />
                 </ScrollParallax>
               </div>
             </div>
