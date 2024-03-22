@@ -11,6 +11,7 @@ import { ScrollParallax } from "react-just-parallax";
 import { heroIcons } from "../constants";
 import Generating from "./Generating";
 import Notification from "./Notification";
+import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -93,7 +94,7 @@ const Hero = () => {
             </div>
             <Gradient />
           </div>
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[50%] md:w-[138%] lg:-top-[108%]">
+          <div className="-z-10 absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[50%] md:w-[138%] lg:-top-[108%]">
             <img
               src={heroBackground}
               alt="hero background"
@@ -104,6 +105,8 @@ const Hero = () => {
           </div>
           <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
+
+        <CompanyLogos className="hidden z-10 mt-20 lg:block" />
       </div>
       <BottomLine />
     </Section>

@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed left-0 top-0 z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdropbackdrop-blur-sm w-full ${
+      className={`fixed left-0 top-0 z-10 border-b border-n-6 lg:bg-n-8/90 lg:backdropbackdrop-blur-sm w-full ${
         openNavigation
           ? "bg-n-8"
           : "bg-n-8/90 backdrop-blur-sm"
