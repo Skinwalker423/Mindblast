@@ -6,9 +6,9 @@ import { useLocation } from "react-router-dom";
 
 import { useState } from "react";
 
-import { brainwave, mindblast } from "../assets";
+import { brainwave, mindblast } from "../../public/assets";
 import Button from "./Button";
-import MenuSvg from "../assets/svg/MenuSvg";
+import MenuSvg from "../../public/assets/svg/MenuSvg";
 import { HambugerMenu } from "./design/Header";
 
 import { navigation } from "../constants";

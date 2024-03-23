@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import Section from "./Section";
-import { curve, heroBackground, robot } from "../assets";
+import {
+  curve,
+  robot,
+  heroBackground,
+} from "../../public/assets";
 import Button from "./Button";
 import {
   BackgroundCircles,

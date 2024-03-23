@@ -21,8 +21,10 @@ const Benefits = () => {
                   backgroundImage: `url("${benefit.backgroundUrl}")`,
                 }}
               >
-                <div>
-                  <h5>{benefit.title}</h5>
+                <div className="relative z-2 flex flex-col min-h-[22rem] pointer-events-none">
+                  <h5 className="h2 mb-5">
+                    {benefit.title}
+                  </h5>
                 </div>
               </div>
             );
