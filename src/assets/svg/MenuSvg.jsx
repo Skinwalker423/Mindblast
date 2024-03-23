@@ -22,7 +22,9 @@ const MenuSvg = ({ openNavigation }) => {
         height="2"
         rx="1"
         fill="white"
-        transform={`rotate(${openNavigation ? "-45" : "0"})`}
+        transform={`rotate(${
+          openNavigation ? "-45" : "0"
+        })`}
       />
     </svg>
   );
